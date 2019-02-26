@@ -1,0 +1,18 @@
+.app-logo-img {
+    width: 250px;
+}
+
+.app-name {
+
+}
+
+.apps-container {
+    text-align: center;
+}
+
+.app-logo {
+    text-align: center;
+    margin: 20px;
+    border: 1px solid slategray;
+    display: inline-block;
+}
