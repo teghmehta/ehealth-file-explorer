@@ -6,6 +6,7 @@ class Header extends Component {
         return (
             <div className="header">
                 <img src={require("../../res/ehealth-logo.png")} alt={'ehealth-logo'} className="logo"/>
+                {this.props.showTitle ? <h1 className={"title"}>Index of /Medly</h1> : ""}
             </div>
         );
     }

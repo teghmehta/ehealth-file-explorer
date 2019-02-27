@@ -1,12 +1,23 @@
 .logo {
-    float:left;
-    width: 7%;
-    padding-left: 60px;
+    padding-left: 30px;
+    justify-content: flex-start;
+    height: 10%;
+    width: 10%;
+    flex-grow: 0;
+    align-items: center;
+    margin: 21px;
 }
 .header {
-    padding: 20px 30px 20px 30px ;
+    padding: 5px 0px 5px 0px ;
+    margin-bottom: 20px;
     border-bottom: 1px solid lightgrey;
-    display: inline-block;
+    display: flex;
     width: 100%;
     box-shadow: 0 1px 1px -1px lightgray;
+}
+h1 {
+    margin: 31px;
+    flex-grow: 1;
+    padding-left: 0;
+    font-size: 1.6em;
 }

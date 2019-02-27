@@ -6,6 +6,11 @@
 
 }
 
+.bant-medly-sizing {
+    height: 115px;
+    width: auto;
+}
+
 .apps-container {
     text-align: center;
 }
@@ -13,6 +18,7 @@
 .app-logo {
     text-align: center;
     margin: 20px;
-    border: 1px solid slategray;
+    border: 1px solid lightgray;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     display: inline-block;
 }

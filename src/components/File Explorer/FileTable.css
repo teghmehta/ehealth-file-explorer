@@ -1,0 +1,20 @@
+.file-table {
+    width: 100%;
+}
+
+.file-table-container {
+    padding-left: 30px;
+    /*margin-top: 150px;*/
+}
+
+.file-table-container h1 {
+    text-align: center;
+}
+
+.file-row {
+    margin: 20px;
+    border-bottom: 1px solid darkgrey;
+}
+
+
+a:visited { text-decoration: none; color:blue}
