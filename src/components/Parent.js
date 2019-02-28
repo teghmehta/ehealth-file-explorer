@@ -5,10 +5,10 @@ import Header from "./Header/Header";
 class Parent extends Component {
     render() {
         return (
-            <div className="App">
-                <Header showTitle={false}/>
-                <AppsContainer/>
-            </div>
+                <div className="App">
+                    <Header showTitle={false}/>
+                    <AppsContainer/>
+                </div>
         );
     }
 }

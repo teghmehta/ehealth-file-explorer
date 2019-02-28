@@ -7,10 +7,10 @@ class AppsContainer extends Component {
         return (
             <div className="apps-container">
                 <AppDiv path="/medly" logoPath={require("../../res/MedlyS.png")} appName={"Medly"} isBantOrMedly={true}/>
-                <AppDiv path="http://apps.ehealthinnovation.org/bant" logoPath={require("../../res/bant.png")} appName={"bant"} isBantOrMedly={true}/>
-                <AppDiv path="http://apps.ehealthinnovation.org/ned" logoPath={require("../../res/ned.JPG")} appName={"Ned"}/>
-                <AppDiv path="" logoPath={require("../../res/breathe.jpg")} appName={"breathe"}/>
-                <AppDiv path="http://apps.ehealthinnovation.org/icc" logoPath={require("../../res/icc.jpg")} appName={"iCanCope"}/>
+                <AppDiv path="/bant" logoPath={require("../../res/bant.png")} appName={"bant"} isBantOrMedly={true}/>
+                <AppDiv path="/ned" logoPath={require("../../res/ned.JPG")} appName={"Ned"}/>
+                <AppDiv path="/breathe" logoPath={require("../../res/breathe.jpg")} appName={"breathe"}/>
+                <AppDiv path="/icc" logoPath={require("../../res/icc.jpg")} appName={"iCanCope"}/>
             </div>
         );
     }
