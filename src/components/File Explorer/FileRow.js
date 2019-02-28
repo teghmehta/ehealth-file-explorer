@@ -7,8 +7,7 @@ class FileRow extends Component {
         return (
             <tr className={"file-row"}>
                 <td valign="top"><img src={this.props.icon} alt=""/></td>
-                <td><Link to={"/thing/data"}>{this.props.name}</Link></td>
-                {/*TODO: link it to something real*/}
+                <td><Link to={this.props.path}>{this.props.name}</Link></td>
                 <td>{this.props.mod}</td>
                 <td>{this.props.size}</td>
                 <td>{this.props.desc}</td>
