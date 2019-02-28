@@ -113,6 +113,8 @@ function generateSize() {
 
 function generateDummyData(title) {
     let word = generateWords(title);
+
+
     return (
         {
             _id: Math.random(),
@@ -121,7 +123,7 @@ function generateDummyData(title) {
             mod: randomDate(new Date(2012, 0, 1), new Date()),
             size: Math.floor((Math.random() * 100) + 1) + " " +  generateSize(),
             desc: word,
-            icon: 'http://placehold.it/32x32',
+            icon: require("../../../src/res/icons/file_icon_google_24px.svg"),
             path:  "/" + title,
         }
     )

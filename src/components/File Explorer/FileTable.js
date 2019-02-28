@@ -20,7 +20,7 @@ class FileTable extends Component {
 
                     {/*WHEN ADDING NEW props dont forget to map here*/}
                     {this.props.fileData.map((function (item) {
-                        return <FileRow key={item._id} icon={require("../../res/icons/folder_icon_google_24px.svg")} name={item.name} mod={item.mod} size={item.size} desc={item.desc} path={item.path}/>
+                        return <FileRow key={item._id} icon={item.icon} name={item.name} mod={item.mod} size={item.size} desc={item.desc} path={item.path}/>
                     }))}
                     </tbody>
                 </table>
