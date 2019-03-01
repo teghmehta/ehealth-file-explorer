@@ -13,7 +13,6 @@ class App extends Component {
         <BrowserRouter>
           <div>
             <Switch>
-              {console.log((getDummyData("Title")))}
               <Route exact path={"/"} component={Parent}/>
               <Route path ="/medly"  render={()=> <FileExplorer fileData={getOS("Medly")} />}/>
               <Route path ="/bant"  render={()=> <FileExplorer fileData={getOS("bant")}/>} />
@@ -22,14 +21,14 @@ class App extends Component {
               <Route path ="/icc"  render={()=> <FileExplorer fileData={getOS("iCanCope")}/>} />
 
 
-              <Route path ="/ios"  render={()=> <FileExplorer fileData={getReleaseFolders("ios")} />}/>
-              <Route path ="/android"  render={()=> <FileExplorer fileData={getReleaseFolders("android")}/>} />
+              <Route path ="/ios"  render={()=> <FileExplorer fileData={getReleaseFolders("iOS")} />}/>
+              <Route path ="/android"  render={()=> <FileExplorer fileData={getReleaseFolders("Android")}/>} />
 
-              <Route path ="/feature"  render={()=> <FileExplorer fileData={getDummyData("feature")}/>} />
-              <Route path ="/dev"  render={()=> <FileExplorer fileData={getDummyData("dev")}/>} />
-              <Route path ="/staging"  render={()=> <FileExplorer fileData={getDummyData("staging")}/>} />
-              <Route path ="/release"  render={()=> <FileExplorer fileData={getDummyData("release")}/>} />
-              <Route path ="/other"  render={()=> <FileExplorer fileData={getDummyData("other")}/>} />
+              <Route path ="/feature"  render={()=> <FileExplorer fileData={getDummyData("Feature")}/>} />
+              <Route path ="/dev"  render={()=> <FileExplorer fileData={getDummyData("Dev")}/>} />
+              <Route path ="/staging"  render={()=> <FileExplorer fileData={getDummyData("Staging")}/>} />
+              <Route path ="/release"  render={()=> <FileExplorer fileData={getDummyData("Release")}/>} />
+              <Route path ="/other"  render={()=> <FileExplorer fileData={getDummyData("Other")}/>} />
 
             </Switch>
           </div>
