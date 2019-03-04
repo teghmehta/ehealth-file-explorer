@@ -90,9 +90,11 @@ function generateWords(title) {
     return words[Math.floor(Math.random()*words.length)];
 }
 
-function generateSize() {
-    let size = ["GB","TB", "KB", "B", "MB"];
-    return size[Math.floor(Math.random()*size.length)];
+export function bytesToSize(bytes) {
+    var sizes = ['Bytes', 'KB', 'MB', 'GB', 'TB'];
+    if (bytes === 0) return '0 Bytes';
+    var i = parseInt(Math.floor(Math.log(bytes) / Math.log(1024)));
+    return Math.round(bytes / Math.pow(1024, i), 2) + ' ' + sizes[i];
 }
 
 function generateDummyData(title) {
@@ -105,7 +107,7 @@ function generateDummyData(title) {
             title: "Index of " + title,
             name: word,
             mod: randomDate(new Date(2012, 0, 1), new Date()),
-            size: Math.floor((Math.random() * 100) + 1) + " " +  generateSize(),
+            size: Math.floor(Math.random() * 1000000000),
             desc: word,
             icon: require("../../../src/res/icons/file_icon_google_24px.svg"),
             path:  "/" + title,
