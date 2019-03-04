@@ -14,7 +14,7 @@ class FileRow extends Component {
             </tr>
     );
     }
-    }
+}
 
     export default FileRow;
 

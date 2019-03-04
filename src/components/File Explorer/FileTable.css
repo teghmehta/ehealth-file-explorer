@@ -16,5 +16,9 @@
     border-bottom: 1px solid darkgrey;
 }
 
+.header-title:hover {
+    cursor: pointer;
+}
+
 
 a:visited { text-decoration: none; color:blue}

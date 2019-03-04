@@ -6,12 +6,12 @@ import FileHeader from "./FileHeader";
 class FileTable extends Component {
 
     render() {
-
         return (
             <div className="file-table-container">
                 <table className={"file-table"}>
                     <tbody>
-                    <FileHeader name={"Name"} mod={"Last Modified"} size={"Size"} desc={"Description"}/>
+                    {/*onSort={this.onSort.bind(this)}*/}
+                    <FileHeader name={"Name"} mod={"Last Modified"} size={"Size"} desc={"Description"} />
                     <tr>
                         <th colSpan="5">
                             <hr/>

@@ -1,20 +1,3 @@
-
-/*
-<FileRow icon={require("../../res/icons/folder_icon_google_24px.svg")} name={"Medly Folder"} mod={"February 28th, 2019"} size={"--"} desc={"Folder"}/>
-<FileRow icon={require("../../res/icons/file_icon_google_24px.svg")} name={"app.js"} mod={"September 28th, 2018"} size={"5 KB"} desc={"This is the app.js Javascript file"}/>
-<FileRow icon={require("../../res/icons/file_icon_google_24px.svg")} name={"medly.mp4"} mod={"October 31st, 2018"} size={"100 MB"} desc={"A short video about Medly"}/>
-<FileRow icon={require("../../res/icons/file_icon_google_24px.svg")} name={"medly2.mp4"} mod={"January 18th, 2019"} size={"1 GB"} desc={"--"}/>
-*/
-
-/*
-<Route exact path={"/"} component={Parent}/>
-<Route path ="/medly"  render={()=> <FileExplorer fileData={{title: "Index of Medly"}}/>} />
-<Route path ="/bant"  render={()=> <FileExplorer fileData={{title: "Index of bant"}}/>} />
-<Route path ="/ned"  render={()=> <FileExplorer fileData={{title: "Index of ned"}}/>} />
-<Route path ="/breathe"  render={()=> <FileExplorer fileData={{title: "Index of breathe"}}/>} />
-<Route path ="/icc"  render={()=> <FileExplorer fileData={{title: "Index of iCanCope"}}/>} />*/
-
-
 export function getDummyData(title) {
     let dummyData = [];
     for (let i = 0; i<10; i++) {
@@ -31,6 +14,7 @@ export function getOS(title) {
             title: title,
             name: "iOS",
             mod: randomDate(new Date(2012, 0, 1), new Date()),
+            date: "",
             size: "--",
             desc: "Files for iOS",
             icon: require("../../../src/res/icons/folder_icon_google_24px.svg"),
@@ -58,7 +42,7 @@ export function getReleaseFolders(title) {
             size: "--",
             desc: "This is a feature",
             icon: require("../../../src/res/icons/folder_icon_google_24px.svg"),
-            path:  "/feature",
+            path:  "/feature/",
         }, {
             _id: Math.random(),
             title: title,
@@ -67,7 +51,7 @@ export function getReleaseFolders(title) {
             size: "--",
             desc: "This is a dev copy",
             icon: require("../../../src/res/icons/folder_icon_google_24px.svg"),
-            path:  "/dev",
+            path:  "/dev/",
         }, {
             _id: Math.random(),
             title: title,
@@ -76,7 +60,7 @@ export function getReleaseFolders(title) {
             size: "--",
             desc: "This is a ready to stage",
             icon: require("../../../src/res/icons/folder_icon_google_24px.svg"),
-            path:  "/staging",
+            path:  "/staging/",
         },{
             _id: Math.random(),
             title: title,
@@ -85,7 +69,7 @@ export function getReleaseFolders(title) {
             size: "--",
             desc: "This is a release",
             icon: require("../../../src/res/icons/folder_icon_google_24px.svg"),
-            path:  "/release",
+            path:  "/release/",
         }, {
             _id: Math.random(),
             title: title,
@@ -94,7 +78,7 @@ export function getReleaseFolders(title) {
             size: "--",
             desc: "This is other files",
             icon: require("../../../src/res/icons/folder_icon_google_24px.svg"),
-            path:  "/other",
+            path:  "/other/",
         }
     ]
 }
@@ -131,6 +115,7 @@ function generateDummyData(title) {
 
 
 export function randomDate(start, end)  {
-    let date = new Date(start.getTime() + Math.random() * (end.getTime() - start.getTime()))
+    let date = new Date(start.getTime() + Math.random() * (end.getTime() - start.getTime()));
     return date.toDateString();
 }
+
