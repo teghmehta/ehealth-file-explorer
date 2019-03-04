@@ -10,15 +10,12 @@ class FileTable extends Component {
             <div className="file-table-container">
                 <table className={"file-table"}>
                     <tbody>
-                    {/*onSort={this.onSort.bind(this)}*/}
                     <FileHeader name={"Name"} mod={"Last Modified"} size={"Size"} desc={"Description"} />
                     <tr>
                         <th colSpan="5">
                             <hr/>
                         </th>
                     </tr>
-
-                    {/*WHEN ADDING NEW props dont forget to map here*/}
                     {this.props.fileData.map((function (item) {
                         return <FileRow key={item._id} icon={item.icon} name={item.name} mod={item.mod} size={item.size} desc={item.desc} path={item.path}/>
                     }))}
