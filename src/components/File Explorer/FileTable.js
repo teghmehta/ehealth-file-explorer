@@ -17,7 +17,7 @@ class FileTable extends Component {
         this.setState({fileData: this.props.fileData})
     }
 
-    onSort(key, type) {
+    onSort(key, type, direction) {
         let data = this.props.fileData;
         switch(type) {
             case Date:
@@ -35,6 +35,10 @@ class FileTable extends Component {
                 break;
             default:
                 data.sort((a,b) => a[key].localeCompare(b[key]));
+        }
+
+        if (direction === 'desc') {
+            data.reverse();
         }
         this.setState({fileData: data})
     }
