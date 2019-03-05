@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './FileTable.css';
+import {withRouter} from "react-router";
 
 class FileHeader extends Component {
 
@@ -9,6 +10,15 @@ class FileHeader extends Component {
 
         this.state = {direction: '', nameArrow: false, modArrow: false, sizeArrow: false, descArrow: false};
         //TODO: might have to give it an initial state
+    }
+
+    componentWillMount() {
+        this.unlisten = this.props.history.listen((location, action) => {
+            this.setState({direction: '', nameArrow: false, modArrow: false, sizeArrow: false, descArrow: false})
+        });
+    }
+    componentWillUnmount() {
+        this.unlisten();
     }
 
     checkDirection(name, type, arrow) {
@@ -29,9 +39,9 @@ class FileHeader extends Component {
         if (this.state.direction === '' || arrow === false) {
             return name;
         } else if (this.state.direction === 'asc') {
-            return name + "▲";
+            return name + "▼";
         } else {
-            return name + "▼"
+            return name + "▲"
         }
     }
 
@@ -49,5 +59,5 @@ class FileHeader extends Component {
     }
 }
 
-export default FileHeader;
+export default withRouter(FileHeader);
 
