@@ -21,3 +21,26 @@
 }
 
 a:visited { text-decoration: none; color:blue}
+
+@media only screen and (max-width: 750px) {
+    th, td {
+        font-size: 0.95em;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    th, td {
+        font-size: 0.90em;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    th, td {
+        font-size: 0.70em;
+    }
+}
+@media only screen and (max-width: 400px) {
+    th, td {
+        font-size: 0.65em;
+    }
+}

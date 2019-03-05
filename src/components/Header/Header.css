@@ -1,11 +1,9 @@
 .logo {
-    padding-left: 30px;
-    justify-content: flex-start;
-    height:50%;
+    flex: 0 1 auto;
+    margin-left: 30px;
     width: 25%;
-    flex-grow: 0;
-    align-items: center;
-    margin: 21px;
+    justify-content: flex-start;
+
 }
 .header {
     padding: 0;
@@ -14,10 +12,23 @@
     display: flex;
     width: 100%;
     box-shadow: 0 1px 1px -1px lightgray;
+    align-items: center;
 }
 h1 {
     margin: 31px;
-    flex-grow: 1;
+    /*text-align: center;*/
+    flex: 0 1 auto;
     padding-left: 0;
     font-size: 1.6em;
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 1.3em;
+    }
+}
+@media only screen and (max-width: 400px) {
+    h1 {
+        font-size: 1.1em;
+    }
 }
