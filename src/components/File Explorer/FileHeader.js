@@ -13,6 +13,7 @@ class FileHeader extends Component {
     }
 
     componentWillMount() {
+        //This clears the arrows when you route to a new file path
         this.unlisten = this.props.history.listen((location, action) => {
             this.setState({direction: '', nameArrow: false, modArrow: false, sizeArrow: false, descArrow: false})
         });
@@ -26,7 +27,6 @@ class FileHeader extends Component {
             this.props.onSort(name, type, 'desc');
             this.setState({direction: 'asc'});
         } else {
-            //TODO: this else might be causing problems
             this.props.onSort(name, type, 'asc');
             this.setState({direction: 'desc'});
         }

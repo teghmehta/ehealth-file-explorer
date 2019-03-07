@@ -22,7 +22,7 @@ class FileTable extends Component {
         switch(type) {
             case Date:
                 data.sort(function(a,b){
-                    return new Date(b.mod) - new Date(a.mod);
+                    return new Date(a.mod) - new Date(b.mod);
                 });
                 break;
             case "":
@@ -30,7 +30,7 @@ class FileTable extends Component {
                 break;
             case 0:
                 data.sort(function(a,b){
-                    return b.size - a.size
+                    return a.size - b.size
                 });
                 break;
             default:
