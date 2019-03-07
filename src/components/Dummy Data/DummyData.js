@@ -1,13 +1,14 @@
-export function getDummyData(title) {
+export function getDummyData(title, parentPath) {
     let dummyData = [];
+    console.log(parentPath + "getDd");
     for (let i = 0; i<10; i++) {
-        dummyData.push(generateDummyData(title));
+        dummyData.push(generateDummyData(title, parentPath));
     }
     return dummyData;
 
 }
 
-export function getOS(title) {
+export function getOS(title, parentPath) {
     return [
         {
             _id: Math.random(),
@@ -18,7 +19,8 @@ export function getOS(title) {
             size: "--",
             desc: "Files for iOS",
             icon: require("../../../src/res/icons/folder_icon_google_24px.svg"),
-            path: "/ios/"
+            path: parentPath + "/ios/",
+            parentPath: parentPath
         }, {
             _id: Math.random(),
             title: title,
@@ -27,12 +29,13 @@ export function getOS(title) {
             size: "--",
             desc: "Files for Android",
             icon: require("../../../src/res/icons/folder_icon_google_24px.svg"),
-            path:  "/android/",
+            path: parentPath + "/android/",
+            parentPath: parentPath
         }
         ]
 }
 
-export function getReleaseFolders(title) {
+export function getReleaseFolders(title, parentPath) {
     return [
         {
             _id: Math.random(),
@@ -42,7 +45,8 @@ export function getReleaseFolders(title) {
             size: "--",
             desc: "This is a feature",
             icon: require("../../../src/res/icons/folder_icon_google_24px.svg"),
-            path:  "/feature/",
+            path:  parentPath + "/feature/",
+            parentPath: parentPath,
         }, {
             _id: Math.random(),
             title: title,
@@ -51,7 +55,8 @@ export function getReleaseFolders(title) {
             size: "--",
             desc: "This is a dev copy",
             icon: require("../../../src/res/icons/folder_icon_google_24px.svg"),
-            path:  "/dev/",
+            path:  parentPath + "/dev/",
+            parentPath: parentPath,
         }, {
             _id: Math.random(),
             title: title,
@@ -60,7 +65,8 @@ export function getReleaseFolders(title) {
             size: "--",
             desc: "This is a ready to stage",
             icon: require("../../../src/res/icons/folder_icon_google_24px.svg"),
-            path:  "/staging/",
+            path: parentPath + "/staging/",
+            parentPath: parentPath,
         },{
             _id: Math.random(),
             title: title,
@@ -69,7 +75,8 @@ export function getReleaseFolders(title) {
             size: "--",
             desc: "This is a release",
             icon: require("../../../src/res/icons/folder_icon_google_24px.svg"),
-            path:  "/release/",
+            path:  parentPath +"/release/",
+            parentPath: parentPath,
         }, {
             _id: Math.random(),
             title: title,
@@ -78,7 +85,8 @@ export function getReleaseFolders(title) {
             size: "--",
             desc: "This is other files",
             icon: require("../../../src/res/icons/folder_icon_google_24px.svg"),
-            path:  "/other/",
+            path:  parentPath +"/other/",
+            parentPath: parentPath,
         }
     ]
 }
@@ -98,20 +106,21 @@ export function bytesToSize(bytes) {
     return Math.round(bytes / Math.pow(1024, i), 2) + ' ' + sizes[i];
 }
 
-function generateDummyData(title) {
+function generateDummyData(title, parentPath) {
     let word = generateWords(title);
-
+    console.log(parentPath, "gengd");
 
     return (
         {
             _id: Math.random(),
-            title: "Index of " + title,
+            title: title,
             name: word,
             mod: randomDate(new Date(2012, 0, 1), new Date()),
             size: Math.floor(Math.random() * 1000000000),
             desc: word,
             icon: require("../../../src/res/icons/file_icon_google_24px.svg"),
-            path:  "/" + title,
+            path:  parentPath + title,
+            parentPath: parentPath,
         }
     )
 }

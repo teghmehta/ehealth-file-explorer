@@ -14,21 +14,15 @@ class App extends Component {
           <div>
             <Switch>
               <Route exact path={"/"} component={Parent}/>
-              <Route path ="/medly"  render={()=> <FileExplorer fileData={getOS("Medly")} />}/>
-              <Route path ="/bant"  render={()=> <FileExplorer fileData={getOS("bant")}/>} />
-              <Route path ="/ned"  render={()=> <FileExplorer fileData={getOS("Ned")}/>} />
-              <Route path ="/breathe"  render={()=> <FileExplorer fileData={getOS("Breathe")}/>} />
-              <Route path ="/icc"  render={()=> <FileExplorer fileData={getOS("iCanCope")}/>} />
+              <Route exact path ={"/:app"}   render={(props)=> <FileExplorer fileData={getOS(props.match.params.app,
+                   props.match.params.app)} />}/>
 
 
-              <Route path ="/ios"  render={()=> <FileExplorer fileData={getReleaseFolders("iOS")} />}/>
-              <Route path ="/android"  render={()=> <FileExplorer fileData={getReleaseFolders("Android")}/>} />
+              <Route exact path ={"/:app/:os/"}  render={(props)=> <FileExplorer fileData={getReleaseFolders(props.match.params.os,
+                   props.match.params.app + "/" + props.match.params.os)} />}/>
 
-              <Route path ="/feature"  render={()=> <FileExplorer fileData={getDummyData("Feature")}/>} />
-              <Route path ="/dev"  render={()=> <FileExplorer fileData={getDummyData("Dev")}/>} />
-              <Route path ="/staging"  render={()=> <FileExplorer fileData={getDummyData("Staging")}/>} />
-              <Route path ="/release"  render={()=> <FileExplorer fileData={getDummyData("Release")}/>} />
-              <Route path ="/other"  render={()=> <FileExplorer fileData={getDummyData("Other")}/>} />
+              <Route exact path ={"/:app/:os/:version/"}  render={(props)=> <FileExplorer fileData={getDummyData(props.match.params.version,
+                  props.match.params.app, "/" + props.match.params.os + "/" + props.match.params.version)}/>} />
 
             </Switch>
           </div>

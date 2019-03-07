@@ -8,6 +8,7 @@ class FileRow extends Component {
         return (
             <tr className={"file-row"}>
                 <td valign="top"><img src={this.props.icon} alt=""/></td>
+                {/*Link to={{ pathname: this.props.path, state: { title: this.props.title} }*/}
                 <td><Link to={this.props.path}>{this.props.name}</Link></td>
                 <td>{this.props.mod}</td>
                 <td>{bytesToSize(this.props.size)}</td>
