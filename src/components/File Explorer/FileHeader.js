@@ -23,7 +23,8 @@ class FileHeader extends Component {
     }
 
     checkDirection(name, type, arrow) {
-        if (this.state.direction === 'desc') {
+        // checks the direction but also if you clicked a new heading to sort by, it resets the arrow
+        if (this.state.direction === 'desc' || this.state[arrow] ===false) {
             this.props.onSort(name, type, 'desc');
             this.setState({direction: 'asc'});
         } else {
