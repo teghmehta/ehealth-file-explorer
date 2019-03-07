@@ -21,9 +21,9 @@ class App extends Component {
               <Route exact path ={"/:app(medly|bant|ned|icc|breathe)/:os(ios|android)/"}  render={(props)=> <FileExplorer fileData={getReleaseFolders(props.match.params.os,
                    props.match.params.app + "/" + props.match.params.os)} />}/>
 
-              <Route path ={"/:app(medly|bant|ned|icc|breathe)/:os(ios|android)/:version/"}  render={(props)=> <FileExplorer fileData={getDummyData(props.match.params.version,
-                  "TEGH test")}/>} />
-
+              <Route exact path ={"/:app(medly|bant|ned|icc|breathe)/:os(ios|android)/:version/"}  render={(props)=> <FileExplorer fileData={getDummyData(props.match.params.version,
+                  props.match.params.app + "/" + props.match.params.os + "/" + props.match.params.version)}/>} />
+{/*(dev|staging|release|other|feature)*/}
             </Switch>
           </div>
         </BrowserRouter>

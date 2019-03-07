@@ -5,9 +5,9 @@ import {bytesToSize} from '../Dummy Data/DummyData'
 
 class FileRow extends Component {
     render() {
-        console.log(this.props.path + "We made it!");
+        console.log(this.props.path + " FileRow");
         return (
-            <tr className={"file-row"}>
+            <tr className={"file-row"} className={[this.props.className]}>
                 <td valign="top"><img src={this.props.icon} alt=""/></td>
                 {/*Link to={{ pathname: this.props.path, state: { title: this.props.title} }*/}
                 <td><Link to={this.props.path}>{this.props.name}</Link></td>
