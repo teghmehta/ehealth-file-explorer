@@ -14,15 +14,15 @@ class App extends Component {
           <div>
             <Switch>
               <Route exact path={"/"} component={Parent}/>
-              <Route exact path ={"/:app"}   render={(props)=> <FileExplorer fileData={getOS(props.match.params.app,
+              <Route exact path ={"/:app(medly|bant|ned|icc|breathe)"}   render={(props)=> <FileExplorer fileData={getOS(props.match.params.app,
                    props.match.params.app)} />}/>
 
 
-              <Route exact path ={"/:app/:os/"}  render={(props)=> <FileExplorer fileData={getReleaseFolders(props.match.params.os,
+              <Route exact path ={"/:app(medly|bant|ned|icc|breathe)/:os(ios|android)/"}  render={(props)=> <FileExplorer fileData={getReleaseFolders(props.match.params.os,
                    props.match.params.app + "/" + props.match.params.os)} />}/>
 
-              <Route exact path ={"/:app/:os/:version/"}  render={(props)=> <FileExplorer fileData={getDummyData(props.match.params.version,
-                  props.match.params.app, "/" + props.match.params.os + "/" + props.match.params.version)}/>} />
+              <Route path ={"/:app(medly|bant|ned|icc|breathe)/:os(ios|android)/:version/"}  render={(props)=> <FileExplorer fileData={getDummyData(props.match.params.version,
+                  "TEGH test")}/>} />
 
             </Switch>
           </div>

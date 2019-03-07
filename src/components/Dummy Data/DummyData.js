@@ -1,12 +1,3 @@
-export function getDummyData(title, parentPath) {
-    let dummyData = [];
-    console.log(parentPath + "getDd");
-    for (let i = 0; i<10; i++) {
-        dummyData.push(generateDummyData(title, parentPath));
-    }
-    return dummyData;
-
-}
 
 export function getOS(title, parentPath) {
     return [
@@ -106,9 +97,19 @@ export function bytesToSize(bytes) {
     return Math.round(bytes / Math.pow(1024, i), 2) + ' ' + sizes[i];
 }
 
+export function getDummyData(title, parentPath) {
+    let dummyData = [];
+    console.log(parentPath + " GET");
+    for (let i = 0; i<10; i++) {
+        dummyData.push(generateDummyData(title, parentPath));
+    }
+    return dummyData;
+
+}
+
 function generateDummyData(title, parentPath) {
     let word = generateWords(title);
-    console.log(parentPath, "gengd");
+    console.log(parentPath, " GENERATE");
 
     return (
         {

@@ -5,6 +5,7 @@ import {bytesToSize} from '../Dummy Data/DummyData'
 
 class FileRow extends Component {
     render() {
+        console.log(this.props.path + "We made it!");
         return (
             <tr className={"file-row"}>
                 <td valign="top"><img src={this.props.icon} alt=""/></td>
