@@ -14,6 +14,7 @@ class AppDiv extends Component {
                             {/*<h2 className={"app-name"}>{this.props.appName}</h2>*/}
                             <img src={this.props.logoPath} alt={this.props.appName} className="app-logo-img"/>
                         </Link>
+                        <div className="vl"/>
 
                     </div>
                         <div className={"quick-links-container"}>

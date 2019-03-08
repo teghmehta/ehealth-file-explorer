@@ -45,3 +45,9 @@ a {
     padding: 20px;
     justify-content: space-between;
 }
+
+.vl {
+    border-left: 1px solid slategrey;
+    height: 100%;
+    margin-left: 20px;
+}
