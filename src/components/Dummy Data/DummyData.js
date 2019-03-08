@@ -1,13 +1,5 @@
-export function getDummyData(title) {
-    let dummyData = [];
-    for (let i = 0; i<10; i++) {
-        dummyData.push(generateDummyData(title));
-    }
-    return dummyData;
 
-}
-
-export function getOS(title) {
+export function getOS(title, parentPath, nextPath) {
     return [
         {
             _id: Math.random(),
@@ -18,7 +10,8 @@ export function getOS(title) {
             size: "--",
             desc: "Files for iOS",
             icon: require("../../../src/res/icons/folder_icon_google_24px.svg"),
-            path: "/ios/"
+            path: "/" + nextPath + "/iOS/",
+            parentPath: "/" + parentPath
         }, {
             _id: Math.random(),
             title: title,
@@ -27,12 +20,13 @@ export function getOS(title) {
             size: "--",
             desc: "Files for Android",
             icon: require("../../../src/res/icons/folder_icon_google_24px.svg"),
-            path:  "/android/",
+            path:"/" + nextPath + "/Android/",
+            parentPath: "/" + parentPath
         }
         ]
 }
 
-export function getReleaseFolders(title) {
+export function getReleaseFolders(title, parentPath, nextPath) {
     return [
         {
             _id: Math.random(),
@@ -42,7 +36,8 @@ export function getReleaseFolders(title) {
             size: "--",
             desc: "This is a feature",
             icon: require("../../../src/res/icons/folder_icon_google_24px.svg"),
-            path:  "/feature/",
+            path: "/" + nextPath + "/Feature/",
+            parentPath: "/" + parentPath,
         }, {
             _id: Math.random(),
             title: title,
@@ -51,7 +46,8 @@ export function getReleaseFolders(title) {
             size: "--",
             desc: "This is a dev copy",
             icon: require("../../../src/res/icons/folder_icon_google_24px.svg"),
-            path:  "/dev/",
+            path:  "/" + nextPath + "/Dev/",
+            parentPath: +parentPath,
         }, {
             _id: Math.random(),
             title: title,
@@ -60,7 +56,8 @@ export function getReleaseFolders(title) {
             size: "--",
             desc: "This is a ready to stage",
             icon: require("../../../src/res/icons/folder_icon_google_24px.svg"),
-            path:  "/staging/",
+            path: "/" + nextPath + "/Staging/",
+            parentPath: "/" +parentPath,
         },{
             _id: Math.random(),
             title: title,
@@ -69,7 +66,8 @@ export function getReleaseFolders(title) {
             size: "--",
             desc: "This is a release",
             icon: require("../../../src/res/icons/folder_icon_google_24px.svg"),
-            path:  "/release/",
+            path:  "/" + nextPath +"/Release/",
+            parentPath: "/" + parentPath,
         }, {
             _id: Math.random(),
             title: title,
@@ -78,7 +76,8 @@ export function getReleaseFolders(title) {
             size: "--",
             desc: "This is other files",
             icon: require("../../../src/res/icons/folder_icon_google_24px.svg"),
-            path:  "/other/",
+            path:  "/" + nextPath + "/Other/",
+            parentPath: "/" + parentPath,
         }
     ]
 }
@@ -98,20 +97,31 @@ export function bytesToSize(bytes) {
     return Math.round(bytes / Math.pow(1024, i), 2) + ' ' + sizes[i];
 }
 
-function generateDummyData(title) {
-    let word = generateWords(title);
+export function getDummyData(title, parentPath) {
+    let dummyData = [];
+    console.log(parentPath + " GET");
+    for (let i = 0; i<10; i++) {
+        dummyData.push(generateDummyData(title, parentPath));
+    }
+    return dummyData;
 
+}
+
+function generateDummyData(title, parentPath) {
+    let word = generateWords(title);
+    console.log(parentPath, " GENERATE");
 
     return (
         {
             _id: Math.random(),
-            title: "Index of " + title,
+            title: title,
             name: word,
             mod: randomDate(new Date(2012, 0, 1), new Date()),
             size: Math.floor(Math.random() * 1000000000),
             desc: word,
             icon: require("../../../src/res/icons/file_icon_google_24px.svg"),
-            path:  "/" + title,
+            path: "/" + parentPath,
+            parentPath: "/" + parentPath,
         }
     )
 }

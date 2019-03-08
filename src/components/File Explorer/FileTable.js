@@ -54,9 +54,16 @@ class FileTable extends Component {
                             <hr/>
                         </th>
                     </tr>
-                    {this.props.fileData.map((function (item) {
-                        return <FileRow key={item._id} icon={item.icon} name={item.name} mod={item.mod} size={item.size} desc={item.desc} path={item.path}/>
-                    }))}
+                    {/*the key is 2 for the parent-route because the other keys in the fileData are <= 1*/}
+                    <FileRow key={2} icon={require('../../res/icons/return_icon_24px.svg')} name={"Parent Directory"} mod={''} size={'--'} desc={''} path={this.props.fileData[0].parentPath}/>
+                    {this.props.fileData.map((function (item, index) {
+                        //This checks for every other item in the table shade it.
+                        if (index % 2 === 0) {
+                            return <FileRow className="shaded" key={item._id} title={item.title} icon={item.icon} name={item.name} mod={item.mod} size={item.size} desc={item.desc} path={item.path}/>
+                        }  else {
+                            return <FileRow shaded={false} key={item._id} title={item.title} icon={item.icon} name={item.name} mod={item.mod} size={item.size} desc={item.desc} path={item.path}/>
+                        }
+                        }))}
                     </tbody>
                 </table>
             </div>
