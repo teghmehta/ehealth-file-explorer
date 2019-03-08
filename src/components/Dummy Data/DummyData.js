@@ -1,5 +1,5 @@
 
-export function getOS(title, parentPath) {
+export function getOS(title, parentPath, nextPath) {
     return [
         {
             _id: Math.random(),
@@ -10,8 +10,8 @@ export function getOS(title, parentPath) {
             size: "--",
             desc: "Files for iOS",
             icon: require("../../../src/res/icons/folder_icon_google_24px.svg"),
-            path: "/" +parentPath + "/iOS/",
-            parentPath: parentPath
+            path: "/" + nextPath + "/iOS/",
+            parentPath: "/" + parentPath
         }, {
             _id: Math.random(),
             title: title,
@@ -20,13 +20,13 @@ export function getOS(title, parentPath) {
             size: "--",
             desc: "Files for Android",
             icon: require("../../../src/res/icons/folder_icon_google_24px.svg"),
-            path:"/" + parentPath + "/Android/",
-            parentPath: parentPath
+            path:"/" + nextPath + "/Android/",
+            parentPath: "/" + parentPath
         }
         ]
 }
 
-export function getReleaseFolders(title, parentPath) {
+export function getReleaseFolders(title, parentPath, nextPath) {
     return [
         {
             _id: Math.random(),
@@ -36,8 +36,8 @@ export function getReleaseFolders(title, parentPath) {
             size: "--",
             desc: "This is a feature",
             icon: require("../../../src/res/icons/folder_icon_google_24px.svg"),
-            path: "/" + parentPath + "/Feature/",
-            parentPath: parentPath,
+            path: "/" + nextPath + "/Feature/",
+            parentPath: "/" + parentPath,
         }, {
             _id: Math.random(),
             title: title,
@@ -46,8 +46,8 @@ export function getReleaseFolders(title, parentPath) {
             size: "--",
             desc: "This is a dev copy",
             icon: require("../../../src/res/icons/folder_icon_google_24px.svg"),
-            path:  "/" + parentPath + "/Dev/",
-            parentPath: parentPath,
+            path:  "/" + nextPath + "/Dev/",
+            parentPath: +parentPath,
         }, {
             _id: Math.random(),
             title: title,
@@ -56,8 +56,8 @@ export function getReleaseFolders(title, parentPath) {
             size: "--",
             desc: "This is a ready to stage",
             icon: require("../../../src/res/icons/folder_icon_google_24px.svg"),
-            path: "/" + parentPath + "/Staging/",
-            parentPath: parentPath,
+            path: "/" + nextPath + "/Staging/",
+            parentPath: "/" +parentPath,
         },{
             _id: Math.random(),
             title: title,
@@ -66,8 +66,8 @@ export function getReleaseFolders(title, parentPath) {
             size: "--",
             desc: "This is a release",
             icon: require("../../../src/res/icons/folder_icon_google_24px.svg"),
-            path:  "/" + parentPath +"/Release/",
-            parentPath: parentPath,
+            path:  "/" + nextPath +"/Release/",
+            parentPath: "/" + parentPath,
         }, {
             _id: Math.random(),
             title: title,
@@ -76,8 +76,8 @@ export function getReleaseFolders(title, parentPath) {
             size: "--",
             desc: "This is other files",
             icon: require("../../../src/res/icons/folder_icon_google_24px.svg"),
-            path:  "/" + parentPath + "/Other/",
-            parentPath: parentPath,
+            path:  "/" + nextPath + "/Other/",
+            parentPath: "/" + parentPath,
         }
     ]
 }
