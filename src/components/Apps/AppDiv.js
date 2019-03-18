@@ -9,12 +9,11 @@ class AppDiv extends Component {
     render() {
         return (
                 <div className="app-logo">
-                    <div className={"app-div-container"}>
+                    <div className={"app-div-container"} className={[this.props.backgroundColor]}>
                         <Link to={this.props.path}>
                             {/*<h2 className={"app-name"}>{this.props.appName}</h2>*/}
                             <img src={this.props.logoPath} alt={this.props.appName} className="app-logo-img"/>
                         </Link>
-                        <div className="vl"/>
 
                     </div>
                         <div className={"quick-links-container"}>
