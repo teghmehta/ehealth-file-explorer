@@ -1,9 +1,6 @@
 .logo {
-    /*flex: 0 1 auto;*/
     margin-left: 30px;
     width: 20%;
-    /*justify-content: flex-start;*/
-
 }
 
 a {
@@ -17,12 +14,6 @@ a {
     /*width: 100%;*/
     box-shadow: 0 1px 1px -1px lightgray;
     align-items: center;
-}
-h1 {
-    /*flex: 0 1 auto;*/
-    /*padding-left: 0;*/
-    font-size: 1.6em;
-    /*margin: 31px;*/
 }
 
 .title-div {
@@ -44,6 +35,9 @@ h1 {
 @media only screen and (max-width: 600px) {
     h1 {
         font-size: 1.1em;
+    }
+    .logo {
+        width: 40%;
     }
 }
 @media only screen and (max-width: 400px) {

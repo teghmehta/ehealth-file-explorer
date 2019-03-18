@@ -3,17 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b006d0d6-6c37-4226-ac50-f25c51b9792d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Apps/AppDiv.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Apps/AppDiv.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Apps/AppDiv.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Apps/AppDiv.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Apps/AppsContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Apps/AppsContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/File Explorer/FileTable.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/File Explorer/FileTable.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/res/MedlyPic.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/res/MedlyS.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/res/MedlyS.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/res/bant.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/res/breathe.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/res/icc.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/res/logo-bant.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/res/ned.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,31 +17,31 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/App.js">
+        <entry file="file://$PROJECT_DIR$/src/components/Apps/AppDiv.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
-              <caret line="23" column="71" selection-start-line="23" selection-start-column="71" selection-end-line="23" selection-end-column="71" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="657">
+              <caret line="143" column="1" selection-start-line="90" selection-end-line="143" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Apps/AppDiv.css">
+        <entry file="file://$PROJECT_DIR$/src/App.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2875">
-              <caret line="125" column="15" selection-start-line="125" selection-start-column="15" selection-end-line="125" selection-end-column="15" />
+            <state relative-caret-position="506">
+              <caret line="22" column="26" lean-forward="true" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/App.css">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Header/Header.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="276">
+              <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -80,11 +70,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/File Explorer/QuickLinks.js">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/Header/Header.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="56" column="60" selection-start-line="56" selection-start-column="60" selection-end-line="56" selection-end-column="60" />
+            <state relative-caret-position="141">
+              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
             </state>
           </provider>
         </entry>
@@ -172,8 +162,6 @@
         <option value="$PROJECT_DIR$/src/components/File Explorer/FileItem.js" />
         <option value="$PROJECT_DIR$/public/sorttable.js" />
         <option value="$PROJECT_DIR$/public/index.html" />
-        <option value="$PROJECT_DIR$/src/components/Header/Header.js" />
-        <option value="$PROJECT_DIR$/src/components/Header/Header.css" />
         <option value="$PROJECT_DIR$/src/components/File Explorer/FileHeader.js" />
         <option value="$PROJECT_DIR$/src/components/Parent.js" />
         <option value="$PROJECT_DIR$/src/components/File Explorer/FileExplorer.js" />
@@ -186,6 +174,8 @@
         <option value="$PROJECT_DIR$/src/components/Apps/AppsContainer.js" />
         <option value="$PROJECT_DIR$/src/components/Apps/AppDiv.css" />
         <option value="$PROJECT_DIR$/src/App.css" />
+        <option value="$PROJECT_DIR$/src/components/Header/Header.js" />
+        <option value="$PROJECT_DIR$/src/components/Header/Header.css" />
       </list>
     </option>
   </component>
@@ -450,11 +440,25 @@
       <option name="project" value="LOCAL" />
       <updated>1551992763785</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Added CSS Media Queries for the quick links landing page. Still need to fix the header.">
+      <created>1552935870851</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1552935870851</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Fixed the header. BTW I added new icons 4:3 last commit.">
+      <created>1552938255001</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1552938255001</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67378000" />
+    <option name="totallyTimeSpent" value="69626000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -528,7 +532,9 @@
     <MESSAGE value="Changed the direction of the arrow for Date and File Sizes" />
     <MESSAGE value="if you clicked a new heading to sort by, it resets the arrow. For example, If I click Name and the arrow is pointing down, before if I click another heading like Size, the arrow would point the opposite way (up). Now it will always point down every time you click a new heading." />
     <MESSAGE value="Fixed the url bug. Now I need to fix the parent url." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed the url bug. Now I need to fix the parent url." />
+    <MESSAGE value="Added CSS Media Queries for the quick links landing page. Still need to fix the header." />
+    <MESSAGE value="Fixed the header. BTW I added new icons 4:3 last commit." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed the header. BTW I added new icons 4:3 last commit." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/index.js">
@@ -580,27 +586,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Header/Header.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/File Explorer/FileHeader.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1035">
           <caret line="47" selection-start-line="47" selection-end-line="47" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Header/Header.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
@@ -678,10 +667,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Apps/AppDiv.js">
+    <entry file="file://$PROJECT_DIR$/src/App.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="80" selection-start-line="11" selection-start-column="80" selection-end-line="11" selection-end-column="80" />
+        <state relative-caret-position="506">
+          <caret line="22" column="26" lean-forward="true" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Header/Header.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
@@ -698,17 +694,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Apps/AppDiv.css">
+    <entry file="file://$PROJECT_DIR$/src/components/Apps/AppDiv.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2875">
-          <caret line="125" column="15" selection-start-line="125" selection-start-column="15" selection-end-line="125" selection-end-column="15" />
+        <state relative-caret-position="253">
+          <caret line="11" column="80" selection-start-line="11" selection-start-column="80" selection-end-line="11" selection-end-column="80" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.css">
+    <entry file="file://$PROJECT_DIR$/src/components/Apps/AppDiv.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="657">
+          <caret line="143" column="1" selection-start-line="90" selection-end-line="143" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Header/Header.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
         </state>
       </provider>
     </entry>
