@@ -1,0 +1,90 @@
+import React, { Component } from 'react';
+import FileRow from "./FileRow";
+import FileHeader from "./FileHeader";
+import {Link} from "react-router-dom";
+
+class QuickLinks extends Component {
+    /*render() {
+        return (
+            {/!*<div className="quick-links-container">*!/}
+                {/!*<FileTable fileData={getDummyData("Quick Links", "/")}/>*!/}
+                {/!*<FileRow key={3} icon={require('../../res/icons/file_icon_google_24px.svg')} name={"Quick Link"} mod={''} size={'--'} desc={''} path={"/"}/>*!/}
+            {/!*</div>*!/}
+
+        );
+    }*/
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            fileData: this.props.fileData,
+        };
+    }
+
+    componentWillReceiveProps(nextProps, nextContext) {
+
+        this.setState({fileData: this.props.fileData})
+    }
+
+    onSort(key, type, direction) {
+        let data = this.props.fileData;
+        switch (type) {
+            case Date:
+                data.sort(function (a, b) {
+                    return new Date(a.mod) - new Date(b.mod);
+                });
+                break;
+            case "":
+                data.sort((a, b) => a[key].localeCompare(b[key]));
+                break;
+            case 0:
+                data.sort(function (a, b) {
+                    return a.size - b.size
+                });
+                break;
+            default:
+                data.sort((a, b) => a[key].localeCompare(b[key]));
+        }
+
+        if (direction === 'desc') {
+            data.reverse();
+        }
+        this.setState({fileData: data})
+    }
+
+    render() {
+        return (
+            <div className="file-table-container quick-links">
+                <table className={"file-table"}>
+                    <tbody>
+                    <FileHeader onSort={this.onSort.bind(this)} name={"Name"} mod={"Last Modified"} size={"Size"}
+                                desc={"Description"}/>
+                    <tr>
+                        <th colSpan="5">
+                            <hr/>
+                        </th>
+                    </tr>
+                    {/*the key is 2 for the parent-route because the other keys in the fileData are <= 1*/}
+                    {this.props.fileData.map((function (item, index) {
+                       /* //This checks for every other item in the table shade it.
+                        if (index % 2 === 0) {
+                            return <FileRow className="shaded" key={item._id} title={item.title} icon={item.icon}
+                                            name={item.name} mod={item.mod} size={item.size} desc={item.desc}
+                                            path={item.path}/>
+                        } else {
+                            return <FileRow shaded={false} key={item._id} title={item.title} icon={item.icon}
+                                            name={item.name} mod={item.mod} size={item.size} desc={item.desc}
+                                            path={item.path}/>
+                        }*/
+                       return <FileRow shaded={false} key={item._id} title={item.title} icon={item.icon}
+                                 name={item.name} mod={item.mod} size={item.size} desc={item.desc}
+                                 path={item.path}/>
+                    }))}
+                    </tbody>
+                </table>
+            </div>
+        );
+    }
+}
+
+export default QuickLinks;

@@ -1,9 +1,8 @@
 .app-logo-img {
-    width: 250px;
+    width: 350px;
 }
 
 .app-name {
-
 }
 
 .bant-medly-sizing {
@@ -11,14 +10,44 @@
     width: auto;
 }
 
-.apps-container {
+.quick-links-container {
+    width: 70%;
+}
+
+.quick-links-title {
     text-align: center;
+    padding-bottom: 20px;
+}
+
+a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.app-div-container {
+    padding-left: 30px;
+    display: flex;
+    justify-content: center;
+    flex-grow: 0;
+}
+
+.apps-container {
+    display: flex;
+    flex-direction: column;
 }
 
 .app-logo {
-    text-align: center;
     margin: 20px;
     border: 1px solid lightgray;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    display: inline-block;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.vl {
+    border-left: 1px solid slategrey;
+    height: 100%;
+    margin-left: 20px;
 }

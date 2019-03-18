@@ -82,6 +82,72 @@ export function getReleaseFolders(title, parentPath, nextPath) {
     ]
 }
 
+export function getLatestReleaseFolders(title, parentPath, nextPath) {
+    //TODO: Update paths
+    return [
+        {
+            _id: Math.random(),
+            title: title,
+            name: "Latest Feature",
+            mod: randomDate(new Date(2019, 0, 1), new Date()),
+            size: "--",
+            desc: "This is a feature",
+            icon: require("../../../src/res/icons/folder_icon_google_24px.svg"),
+            path: "/" + nextPath + "/Feature/",
+            parentPath: "/" + parentPath,
+        }, {
+            _id: Math.random(),
+            title: title,
+            name: "Latest Development",
+            mod: randomDate(new Date(2019, 0, 1), new Date()),
+            size: "--",
+            desc: "This is a dev copy",
+            icon: require("../../../src/res/icons/folder_icon_google_24px.svg"),
+            path:  "/" + nextPath + "/Dev/",
+            parentPath: +parentPath,
+        }, {
+            _id: Math.random(),
+            title: title,
+            name: "Latest Staging",
+            mod: randomDate(new Date(2019, 0, 1), new Date()),
+            size: "--",
+            desc: "This is a ready to stage",
+            icon: require("../../../src/res/icons/folder_icon_google_24px.svg"),
+            path: "/" + nextPath + "/Staging/",
+            parentPath: "/" +parentPath,
+        },{
+            _id: Math.random(),
+            title: title,
+            name: "Latest Release",
+            mod: randomDate(new Date(2019, 0, 1), new Date()),
+            size: "--",
+            desc: "This is a release",
+            icon: require("../../../src/res/icons/folder_icon_google_24px.svg"),
+            path:  "/" + nextPath +"/Release/",
+            parentPath: "/" + parentPath,
+        }
+    ]
+}
+
+export function getBuilds(parentPath) {
+    let dummyData = [];
+    for (let i = 0; i<5; i++) {
+        dummyData.push({
+            _id: Math.random(),
+            title: "build" +Math.floor(Math.random() * 100),
+            name: "build" +Math.floor(Math.random() * 100),
+            mod: randomDate(new Date(2012, 0, 1), new Date()),
+            size: Math.floor(Math.random() * 1000000000),
+            desc: "build" +Math.floor(Math.random() * 100),
+            icon: require("../../../src/res/icons/file_icon_google_24px.svg"),
+            path: "/" + parentPath,
+            parentPath: "/" + parentPath,
+        });
+    }
+    return dummyData;
+}
+
+
 function generateWords(title) {
     let words = [title + ' Video', 'Video for UHN (Demo)', title, title + ".mp4", title + ".mp3",
         "Information", title + " Powerpoint", "Graphics.png", "App.js", "Index.js",
