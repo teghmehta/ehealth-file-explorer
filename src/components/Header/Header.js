@@ -9,7 +9,9 @@ class Header extends Component {
                 <Link to={"/"}>
                     <img src={require("../../res/ehealth-logo.png")} alt={'ehealth-logo'} className="logo"/>
                 </Link>
-                {this.props.showTitle ? <h1 className={"title"}>{this.props.title}</h1> : <h1 className={"title"}/>}
+                <div className={'title-div'}>
+                    {this.props.showTitle ? <h1 className={"title"}>{this.props.title}</h1> : <h1 className={"title"}/>}
+                </div>
             </div>
         );
     }
