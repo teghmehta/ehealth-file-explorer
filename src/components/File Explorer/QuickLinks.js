@@ -10,7 +10,6 @@ class QuickLinks extends Component {
                 {/!*<FileTable fileData={getDummyData("Quick Links", "/")}/>*!/}
                 {/!*<FileRow key={3} icon={require('../../res/icons/file_icon_google_24px.svg')} name={"Quick Link"} mod={''} size={'--'} desc={''} path={"/"}/>*!/}
             {/!*</div>*!/}
-
         );
     }*/
 
@@ -55,6 +54,7 @@ class QuickLinks extends Component {
     render() {
         return (
             <div className="file-table-container quick-links">
+                <h3 className={"os-title"}>{this.props.fileData[0].os}</h3>
                 <table className={"file-table"}>
                     <tbody>
                     <FileHeader onSort={this.onSort.bind(this)} name={"Name"} mod={"Last Modified"} size={"Size"}
@@ -66,19 +66,19 @@ class QuickLinks extends Component {
                     </tr>
                     {/*the key is 2 for the parent-route because the other keys in the fileData are <= 1*/}
                     {this.props.fileData.map((function (item, index) {
-                       /* //This checks for every other item in the table shade it.
-                        if (index % 2 === 0) {
-                            return <FileRow className="shaded" key={item._id} title={item.title} icon={item.icon}
-                                            name={item.name} mod={item.mod} size={item.size} desc={item.desc}
-                                            path={item.path}/>
-                        } else {
-                            return <FileRow shaded={false} key={item._id} title={item.title} icon={item.icon}
-                                            name={item.name} mod={item.mod} size={item.size} desc={item.desc}
-                                            path={item.path}/>
-                        }*/
-                       return <FileRow shaded={false} key={item._id} title={item.title} icon={item.icon}
-                                 name={item.name} mod={item.mod} size={item.size} desc={item.desc}
-                                 path={item.path}/>
+                        /* //This checks for every other item in the table shade it.
+                         if (index % 2 === 0) {
+                             return <FileRow className="shaded" key={item._id} title={item.title} icon={item.icon}
+                                             name={item.name} mod={item.mod} size={item.size} desc={item.desc}
+                                             path={item.path}/>
+                         } else {
+                             return <FileRow shaded={false} key={item._id} title={item.title} icon={item.icon}
+                                             name={item.name} mod={item.mod} size={item.size} desc={item.desc}
+                                             path={item.path}/>
+                         }*/
+                        return <FileRow shaded={false} key={item._id} title={item.title} icon={item.icon}
+                                        name={item.name} mod={item.mod} size={item.size} desc={item.desc}
+                                        path={item.path}/>
                     }))}
                     </tbody>
                 </table>

@@ -82,7 +82,7 @@ export function getReleaseFolders(title, parentPath, nextPath) {
     ]
 }
 
-export function getLatestReleaseFolders(title, parentPath, nextPath) {
+export function getLatestReleaseFolders(title, parentPath, nextPath, os) {
     //TODO: Update paths
     return [
         {
@@ -92,8 +92,9 @@ export function getLatestReleaseFolders(title, parentPath, nextPath) {
             mod: randomDate(new Date(2019, 0, 1), new Date()),
             size: "--",
             desc: "This is a feature",
+            os: os,
             icon: require("../../../src/res/icons/folder_icon_google_24px.svg"),
-            path: "/" + nextPath + "/Feature/",
+            path: "/" + nextPath + "/" + os + "/Feature/",
             parentPath: "/" + parentPath,
         }, {
             _id: Math.random(),
@@ -102,8 +103,9 @@ export function getLatestReleaseFolders(title, parentPath, nextPath) {
             mod: randomDate(new Date(2019, 0, 1), new Date()),
             size: "--",
             desc: "This is a dev copy",
+            os: os,
             icon: require("../../../src/res/icons/folder_icon_google_24px.svg"),
-            path:  "/" + nextPath + "/Dev/",
+            path:  "/" + nextPath + "/" + os + "/Dev/",
             parentPath: +parentPath,
         }, {
             _id: Math.random(),
@@ -112,20 +114,22 @@ export function getLatestReleaseFolders(title, parentPath, nextPath) {
             mod: randomDate(new Date(2019, 0, 1), new Date()),
             size: "--",
             desc: "This is a ready to stage",
+            os: os,
             icon: require("../../../src/res/icons/folder_icon_google_24px.svg"),
-            path: "/" + nextPath + "/Staging/",
+            path: "/" + nextPath + "/" + os + "/Staging/",
             parentPath: "/" +parentPath,
-        },{
+        },  {
             _id: Math.random(),
             title: title,
             name: "Latest Release",
             mod: randomDate(new Date(2019, 0, 1), new Date()),
             size: "--",
-            desc: "This is a release",
+            desc: "This is a ready for release",
+            os: os,
             icon: require("../../../src/res/icons/folder_icon_google_24px.svg"),
-            path:  "/" + nextPath +"/Release/",
-            parentPath: "/" + parentPath,
-        }
+            path: "/" + nextPath + "/" + os + "/Release/",
+            parentPath: "/" +parentPath,
+        },
     ]
 }
 

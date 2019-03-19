@@ -1,8 +1,19 @@
 .app-logo-img {
     width: 380px;
+    align-self: center;
+    justify-self: center;
 }
 
-.app-name {
+.file-table {
+    padding-bottom: 12px;
+}
+
+.background-color-icc {
+    background: rgb(86, 187, 198);
+}
+
+.background-color-bant {
+    background: rgb(73, 132, 184);
 }
 
 .bant-medly-sizing {
@@ -13,13 +24,12 @@
 .quick-links-container {
     width: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
 }
 
 .quick-links {
-    align-self: center;
     flex: 1;
-    padding-left: 10px;
+    padding-left: 15px;
 }
 
 .quick-links-title {
@@ -34,7 +44,7 @@ a {
 }
 
 .app-div-container {
-    display: inline-block;
+    display: flex;
     justify-content: center;
     flex-grow: 0;
 }
@@ -52,11 +62,10 @@ a {
     justify-content: space-between;
 }
 
-.vl {
-    border-left: 1px solid slategrey;
-    height: 100%;
-    margin-left: 20px;
+.os-title {
+    Margin: 5px auto 5px auto;
 }
+
 
 
 @media only screen and (max-width: 1100px) {

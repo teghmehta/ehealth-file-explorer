@@ -17,10 +17,10 @@ class App extends Component {
               <Route exact path ={"/:app(Medly|bant|Ned|iCanCope|breathe)"}   render={(props)=> <FileExplorer fileData={getOS(props.match.params.app,
                    "", props.match.params.app)} />}/>
 
-              <Route exact path ={"/:app(Medly|bant|Ned|iCanCope|breathe)/:os(iOS|Android)/"}  render={(props)=> <FileExplorer fileData={getReleaseFolders(props.match.params.os,
+              <Route exact path ={"/:app(Medly|bant|Ned|iCanCope|breathe)/:os(iOS|Android|Web)/"}  render={(props)=> <FileExplorer fileData={getReleaseFolders(props.match.params.os,
                    props.match.params.app + "/",  props.match.params.app + "/" + props.match.params.os)} />}/>
 
-              <Route exact path ={"/:app(Medly|bant|Ned|iCanCope|breathe)/:os(iOS|Android)/:version(Dev|Staging|Release|Other|Feature)/"}  render={(props)=> <FileExplorer fileData={getDummyData(props.match.params.version,
+              <Route exact path ={"/:app(Medly|bant|Ned|iCanCope|breathe)/:os(iOS|Android|Web)/:version(Dev|Staging|Release|Other|Feature)/"}  render={(props)=> <FileExplorer fileData={getDummyData(props.match.params.version,
                   props.match.params.app + "/" + props.match.params.os,
                   props.match.params.app + "/" + props.match.params.os + "/" + props.match.params.version )}/>} />
             </Switch>
