@@ -17,6 +17,7 @@ class App extends Component {
               <Route exact path ={"/:app(Medly|bant|Ned|iCanCope|breathe)"}   render={(props)=> <FileExplorer fileData={getOS(props.match.params.app,
                    "", props.match.params.app)} />}/>
 
+
               <Route exact path ={"/:app(Medly|bant|Ned|iCanCope|breathe)/:os(iOS|Android|Web)/"}  render={(props)=> <FileExplorer fileData={getReleaseFolders(props.match.params.os,
                    props.match.params.app + "/",  props.match.params.app + "/" + props.match.params.os)} />}/>
 

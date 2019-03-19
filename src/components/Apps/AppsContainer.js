@@ -20,8 +20,8 @@ class AppsContainer extends Component {
                          fileDataIOS={getLatestReleaseFolders("Latest Releases", "/", "breathe", "iOS")}/>
 
                 <AppDiv path="/iCanCope" logoPath={require("../../res/iCanCopeLogo.png")} appName={"iCanCope"} backgroundColor={'background-color-icc'}
-                        fileDataAndroid={getLatestReleaseFolders("Latest Releases", "/", "icc", "Android")}
-                        fileDataIOS={getLatestReleaseFolders("Latest Releases", "/", "icc", "iOS")}/>
+                        fileDataAndroid={getLatestReleaseFolders("Latest Releases", "/", "iCanCope", "Android")}
+                        fileDataIOS={getLatestReleaseFolders("Latest Releases", "/", "iCanCope", "iOS")}/>
 
                 <AppDiv path="/Ned" logoPath={require("../../res/nedLogoPatient.png")} appName={"Ned"}
                         fileDataAndroid={getLatestReleaseFolders("Latest Releases", "/", "Ned", "Android")}
