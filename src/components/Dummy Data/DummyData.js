@@ -193,7 +193,7 @@ function generateDummyData(title, parentPath) {
             desc: word,
             icon: require("../../../src/res/icons/file_icon_google_24px.svg"),
             path: "/" + parentPath,
-            parentPath: "/" + parentPath,
+            parentPath: "/" + parentPath + "/",
         }
     )
 }

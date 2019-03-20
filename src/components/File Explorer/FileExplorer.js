@@ -6,7 +6,7 @@ class FileExplorer extends Component {
     render() {
         return (
             <div className="App">
-                <Header showTitle={true} title={this.props.fileData[0].title}/>
+                <Header showTitle={true} title={"Index of " + this.props.fileData[0].parentPath  + this.props.fileData[0].title}/>
                 <FileTable fileData={this.props.fileData}/>
             </div>
         );

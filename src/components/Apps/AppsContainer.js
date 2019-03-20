@@ -23,15 +23,15 @@ class AppsContainer extends Component {
                         fileDataAndroid={getLatestReleaseFolders("Latest Releases", "/", "iCanCope", "Android")}
                         fileDataIOS={getLatestReleaseFolders("Latest Releases", "/", "iCanCope", "iOS")}/>
 
-                <AppDiv path="/Ned" logoPath={require("../../res/nedLogoPatient.png")} appName={"Ned"}
-                        fileDataAndroid={getLatestReleaseFolders("Latest Releases", "/", "Ned", "Android")}
-                        fileDataIOS={getLatestReleaseFolders("Latest Releases", "/", "Ned", "iOS")}
-                        fileDataWeb={getLatestReleaseFolders("Latest Releases", "/", "Ned", "Web")}/>
+                <AppDiv path="/NedPatient" logoPath={require("../../res/nedLogoPatient.png")} appName={"NedPatient"}
+                        fileDataAndroid={getLatestReleaseFolders("Latest Releases", "/", "NedPatient", "Android")}
+                        fileDataIOS={getLatestReleaseFolders("Latest Releases", "/", "NedPatient", "iOS")}
+                        fileDataWeb={getLatestReleaseFolders("Latest Releases", "/", "NedPatient", "Web")}/>
 
-                <AppDiv path="/Ned" logoPath={require("../../res/nedLogoClinician.png")} appName={"Ned"}
-                        fileDataAndroid={getLatestReleaseFolders("Latest Releases", "/", "Ned", "Android")}
-                        fileDataIOS={getLatestReleaseFolders("Latest Releases", "/", "Ned", "iOS")}
-                        fileDataWeb={getLatestReleaseFolders("Latest Releases", "/", "Ned", "Web")}/>
+                <AppDiv path="/NedClinician" logoPath={require("../../res/nedLogoClinician.png")} appName={"NedClinician"}
+                        fileDataAndroid={getLatestReleaseFolders("Latest Releases", "/", "NedClinician", "Android")}
+                        fileDataIOS={getLatestReleaseFolders("Latest Releases", "/", "NedClinician", "iOS")}
+                        fileDataWeb={getLatestReleaseFolders("Latest Releases", "/", "NedClinician", "Web")}/>
 
             </div>
         );
