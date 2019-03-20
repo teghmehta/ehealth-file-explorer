@@ -51,10 +51,10 @@ class FileHeader extends Component {
         return (
             <tr>
                 <td align="left" valign="top"><img src="" alt=""/></td>
-                <th onClick={() => this.checkDirection("name", '', 'nameArrow')} className={"header-title"} align="left">{this.displayText(this.props.name, this.state.nameArrow)}</th>
-                <th onClick={() =>  this.checkDirection('mod', Date, 'modArrow')} className={"header-title"} align="left">{this.displayText(this.props.mod, this.state.modArrow)}</th>
-                <th onClick={() =>  this.checkDirection('size', 0, 'sizeArrow')} className={"header-title"} align="left">{this.displayText(this.props.size, this.state.sizeArrow)}</th>
-                <th onClick={() =>  this.checkDirection('desc', "", 'descArrow')} className={"header-title"} align="left">{this.displayText(this.props.desc, this.state.descArrow)}</th>
+                <th onClick={() => this.checkDirection("name", '', 'nameArrow')} className={"header-title header-name"} align="left">{this.displayText(this.props.name, this.state.nameArrow)}</th>
+                <th onClick={() =>  this.checkDirection('mod', Date, 'modArrow')} className={"header-title header-mod"} align="left">{this.displayText(this.props.mod, this.state.modArrow)}</th>
+                <th onClick={() =>  this.checkDirection('size', 0, 'sizeArrow')} className={"header-title header-size"} align="left">{this.displayText(this.props.size, this.state.sizeArrow)}</th>
+                <th onClick={() =>  this.checkDirection('desc', "", 'descArrow')} className={"header-title header-desc"} align="left">{this.displayText(this.props.desc, this.state.descArrow)}</th>
             </tr>
         );
     }

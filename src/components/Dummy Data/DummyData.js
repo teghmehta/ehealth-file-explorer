@@ -171,7 +171,6 @@ export function bytesToSize(bytes) {
 
 export function getDummyData(title, parentPath) {
     let dummyData = [];
-    console.log(parentPath + " GET");
     for (let i = 0; i<10; i++) {
         dummyData.push(generateDummyData(title, parentPath));
     }
@@ -181,7 +180,6 @@ export function getDummyData(title, parentPath) {
 
 function generateDummyData(title, parentPath) {
     let word = generateWords(title);
-    console.log(parentPath, " GENERATE");
 
     return (
         {
@@ -201,6 +199,11 @@ function generateDummyData(title, parentPath) {
 
 export function randomDate(start, end)  {
     let date = new Date(start.getTime() + Math.random() * (end.getTime() - start.getTime()));
-    return date.toDateString();
+    let hrs =(Math.floor(Math.random() * 24) + 1);
+    let min = (Math.floor(Math.random() * 59) + 1);
+
+    let mFormat = (min<10 ? "0" : "");
+
+    return date.toDateString() + " " +  hrs+ ":" +mFormat+min;
 }
 

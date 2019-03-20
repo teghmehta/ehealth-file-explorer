@@ -50,9 +50,9 @@ class FileTable extends Component {
                     <tbody>
                     <FileHeader onSort={this.onSort.bind(this)} name={"Name"} mod={"Last Modified"} size={"Size"} desc={"Description"} />
                     <tr>
-                        <th colSpan="5">
+                        <td colSpan="5">
                             <hr/>
-                        </th>
+                        </td>
                     </tr>
                     {/*the key is 2 for the parent-route because the other keys in the fileData are <= 1*/}
                     <FileRow key={2} icon={require('../../res/icons/return_icon_24px.svg')} name={"Parent Directory"} mod={''} size={'--'} desc={''} path={this.props.fileData[0].parentPath}/>

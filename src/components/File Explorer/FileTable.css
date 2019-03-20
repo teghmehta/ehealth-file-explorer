@@ -2,6 +2,21 @@
     width: 100%;
 }
 
+.header-name, .header-mod {
+    width: 35%;
+}
+
+.header-size {
+    width: 10%;
+}
+
+.header-desc {
+    width: 20%;
+}
+
+th {
+    height: 30px;}
+
 .file-table-container {
     padding: 10px 10px 0 20px ;
 }
@@ -33,17 +48,47 @@ a:visited { text-decoration: none; color:blue}
 
 @media only screen and (max-width: 600px) {
     th, td {
-        font-size: 0.90em;
+        font-size: 0.85em;
     }
 }
 
 @media only screen and (max-width: 500px) {
     th, td {
-        font-size: 0.70em;
+        font-size: 0.65em;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    th, td {
+        font-size: 0.58em;
     }
 }
 @media only screen and (max-width: 400px) {
     th, td {
-        font-size: 0.65em;
+        font-size: 0.45em;
+    }
+}
+
+
+@media only screen and (min-width: 1500px) {
+    th, td {
+        font-size: 1.2em;
+    }
+}
+
+@media only screen and (min-width: 2000px) {
+    th, td {
+        font-size: 1.2em;
+    }
+}
+@media only screen and (min-width: 2300px) {
+    th, td {
+        font-size: 1.2em;
+    }
+}
+
+@media only screen and (min-width: 2500px) {
+    th, td {
+        font-size: 1.2em;
     }
 }

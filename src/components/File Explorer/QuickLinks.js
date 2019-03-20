@@ -4,14 +4,6 @@ import FileHeader from "./FileHeader";
 import {Link} from "react-router-dom";
 
 class QuickLinks extends Component {
-    /*render() {
-        return (
-            {/!*<div className="quick-links-container">*!/}
-                {/!*<FileTable fileData={getDummyData("Quick Links", "/")}/>*!/}
-                {/!*<FileRow key={3} icon={require('../../res/icons/file_icon_google_24px.svg')} name={"Quick Link"} mod={''} size={'--'} desc={''} path={"/"}/>*!/}
-            {/!*</div>*!/}
-        );
-    }*/
 
     constructor(props) {
         super(props);
@@ -60,9 +52,9 @@ class QuickLinks extends Component {
                     <FileHeader onSort={this.onSort.bind(this)} name={"Name"} mod={"Last Modified"} size={"Size"}
                                 desc={"Description"}/>
                     <tr>
-                        <th colSpan="5">
+                        <td colSpan="5">
                             <hr/>
-                        </th>
+                        </td>
                     </tr>
                     {/*the key is 2 for the parent-route because the other keys in the fileData are <= 1*/}
                     {this.props.fileData.map((function (item, index) {
