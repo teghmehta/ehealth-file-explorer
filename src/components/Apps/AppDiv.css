@@ -64,6 +64,7 @@ a {
 
 .os-title {
     Margin: 5px auto 5px auto;
+    font-weight: 900;
 }
 
 .app-div-link {
@@ -96,8 +97,12 @@ a {
 
 
 @media only screen and (max-width: 1100px) {
-    .quick-links th, .quick-links td {
+    .quick-links th, .quick-links td, .os-title {
         font-size: 1em;
+    }
+
+    .see-all-files{
+        font-size: 1.5em;
     }
 
     .app-logo-img {
@@ -106,18 +111,27 @@ a {
 }
 
 @media only screen and (max-width: 1050px) {
-    .quick-links th, .quick-links td {
+    .quick-links th, .quick-links td, .os-title {
         font-size: 0.92em;
+    }
+
+    .see-all-files{
+        font-size: 1.4em;
     }
 
     .app-logo-img {
         width: 300px;
     }
+
 }
 
 @media only screen and (max-width: 950px) {
-    .quick-links th, .quick-links td {
+    .quick-links th, .quick-links td, .os-title{
         font-size: 0.8em;
+    }
+
+    .see-all-files{
+        font-size: 1.3em;
     }
 
     .app-logo-img {
@@ -125,6 +139,9 @@ a {
     }
 }
 @media only screen and (max-width: 850px) {
+    .see-all-files{
+        font-size: 1.2em;
+    }
 
     .app-logo {
         margin: 20px 0 20px 0;
@@ -132,24 +149,37 @@ a {
 }
 
 @media only screen and (max-width: 750px) {
-    .quick-links th, .quick-links td {
+    .quick-links th, .quick-links td, .os-title {
         font-size: 0.7em;
     }
+
+    .see-all-files{
+        font-size: 1.1em;
+    }
+
     .app-logo-img {
         width: 240px;
     }
 }
 
 @media only screen and (max-width: 680px) {
-    .quick-links th, .quick-links td {
+    .quick-links th, .quick-links td , .os-title{
         font-size: 0.6em;
+    }
+    .see-all-files{
+        font-size: 1em;
     }
 }
 
 @media only screen and (max-width: 600px) {
-    .quick-links th, .quick-links td {
+    .quick-links th, .quick-links td, .os-title {
         font-size: 0.6em;
     }
+
+    .see-all-files{
+        font-size: 0.9em;
+    }
+
     .app-logo-img {
         width: 150px;
         align-self: center;
@@ -174,13 +204,17 @@ a {
 }
 
 @media only screen and (max-width: 420px) {
-    .quick-links th, .quick-links td {
+    .quick-links th, .quick-links td, .os-title {
         font-size: 0.5em;
+    }
+
+    .see-all-files{
+        font-size: 0.7em;
     }
 }
 
 @media only screen and (min-width: 1500px) {
-    .quick-links th, .quick-links td {
+    .quick-links th, .quick-links td, .os-title {
         font-size: 1.2em;
     }
 
@@ -190,8 +224,12 @@ a {
 }
 
 @media only screen and (min-width: 1750px) {
-    .quick-links th, .quick-links td {
+    .quick-links th, .quick-links td, .os-title {
         font-size: 1.4em;
+    }
+
+    .see-all-files{
+        font-size: 2em;
     }
 
     .app-logo-img {
@@ -200,8 +238,12 @@ a {
 }
 
 @media only screen and (min-width: 2000px) {
-    .quick-links th, .quick-links td {
+    .quick-links th, .quick-links td, .os-title {
         font-size: 1.5em;
+    }
+
+    .see-all-files{
+        font-size: 2.2em;
     }
 
     .app-logo-img {
