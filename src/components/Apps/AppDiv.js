@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './AppDiv.css';
 import {Link} from "react-router-dom";
-import QuickLinks from "../File Explorer/QuickLinks";
+import QuickLinks from "./QuickLinks";
 
 class AppDiv extends Component {
     render() {
