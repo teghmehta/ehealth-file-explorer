@@ -155,9 +155,10 @@ export function getBuilds(parentPath) {
 
 
 function generateWords(title) {
-    let words = [title + ' Video', 'Video for UHN (Demo)', title, title + ".mp4", title + ".mp3",
-        "Information", title + " Powerpoint", "Graphics.png", "App.js", "Index.js",
-        "eHealth Bylaws", "UHN", "Folder for " + title];
+    let words = [title + ' Video', 'Demo for UHN', title, title + ".mp4", title + ".mp3",
+        "Information", title + " Powerpoint", "Design.png", "App.js", "Index.js",
+        "eHealth Bylaws", "UHN", "Folder for " + title, 'Legal Inquiries', 'Developers Eyes Only',
+        'Medical Clearance', 'pv025', 'pv023', 'Interactive Feedback', 'OLIS Data', 'React.js'];
     return words[Math.floor(Math.random()*words.length)];
 }
 
@@ -171,7 +172,7 @@ export function bytesToSize(bytes) {
 
 export function getDummyData(title, parentPath) {
     let dummyData = [];
-    for (let i = 0; i<10; i++) {
+    for (let i = 0; i<100; i++) {
         dummyData.push(generateDummyData(title, parentPath));
     }
     return dummyData;
@@ -196,14 +197,18 @@ function generateDummyData(title, parentPath) {
     )
 }
 
-
-export function randomDate(start, end)  {
-    let date = new Date(start.getTime() + Math.random() * (end.getTime() - start.getTime()));
+export function getRandomTime() {
     let hrs =(Math.floor(Math.random() * 24) + 1);
     let min = (Math.floor(Math.random() * 59) + 1);
 
     let mFormat = (min<10 ? "0" : "");
 
-    return date.toDateString() + " " +  hrs+ ":" +mFormat+min;
+    return hrs+ ":" +mFormat+min;
+}
+
+
+export function randomDate(start, end)  {
+    let date = new Date(start.getTime() + Math.random() * (end.getTime() - start.getTime()));
+    return date.toDateString();
 }
 
