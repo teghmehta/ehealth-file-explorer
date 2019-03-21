@@ -8,8 +8,9 @@ class AppDiv extends Component {
         return (
                 <div className="app-logo">
                     <div className={`app-div-container ${ this.props.backgroundColor }`}>
-                        <Link to={this.props.path}>
+                        <Link className={'app-div-link'} to={this.props.path}>
                             <img src={this.props.logoPath} alt={this.props.appName} className="app-logo-img"/>
+                            <h2 className={`see-all-files ${this.props.textColor}`}>Click to See All Files</h2>
                         </Link>
 
                     </div>

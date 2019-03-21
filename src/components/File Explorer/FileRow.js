@@ -11,7 +11,7 @@ class FileRow extends Component {
                 <td><Link to={this.props.path}>{this.props.name}</Link></td>
                 <td>{this.props.mod}</td>
                 <td>{bytesToSize(this.props.size)}</td>
-                <td>{this.props.desc}</td>
+                {/*<td>{this.props.desc}</td>*/}
             </tr>
     );
     }

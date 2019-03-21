@@ -3,15 +3,15 @@
 }
 
 .header-name, .header-mod {
-    width: 34%;
+    width: 41%;
 }
 
 .header-size {
-    width: 8%;
+    width: 18%;
 }
 
 .header-desc {
-    width: 24%;
+    width: 0;
 }
 
 th {
@@ -42,30 +42,30 @@ a:visited { text-decoration: none; color:blue}
 
 @media only screen and (max-width: 750px) {
     th, td {
-        font-size: 0.95em;
+        font-size: 1.05em;
     }
 }
 
 @media only screen and (max-width: 600px) {
     th, td {
-        font-size: 0.85em;
+        font-size: 1em;
     }
 }
 
 @media only screen and (max-width: 500px) {
     th, td {
-        font-size: 0.65em;
+        font-size: 0.75em;
     }
 }
 
 @media only screen and (max-width: 450px) {
     th, td {
-        font-size: 0.58em;
+        font-size: 0.7em;
     }
 }
 @media only screen and (max-width: 400px) {
     th, td {
-        font-size: 0.45em;
+        font-size: 0.6em;
     }
 }
 
@@ -78,17 +78,17 @@ a:visited { text-decoration: none; color:blue}
 
 @media only screen and (min-width: 2000px) {
     th, td {
-        font-size: 1.2em;
+        font-size: 1.3em;
     }
 }
 @media only screen and (min-width: 2300px) {
     th, td {
-        font-size: 1.2em;
+        font-size: 1.4em;
     }
 }
 
 @media only screen and (min-width: 2500px) {
     th, td {
-        font-size: 1.2em;
+        font-size: 1.45em;
     }
 }
