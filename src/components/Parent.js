@@ -6,7 +6,7 @@ class Parent extends Component {
     render() {
         return (
                 <div className="App">
-                    <Header  title={"eHealth Innovations - App Download Links"} showTitle={true}/>
+                    <Header title={"eHealth Innovations - App Download Links"} showTitle={true}/>
                     <AppsContainer/>
                 </div>
         );

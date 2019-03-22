@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import FileRow from "../File Explorer/FileRow";
 import FileHeader from "../File Explorer/FileHeader";
-import {Link} from "react-router-dom";
 
 class QuickLinks extends Component {
 

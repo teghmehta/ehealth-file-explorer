@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './FileTable.css';
 import {Link} from "react-router-dom";
-import {bytesToSize, getRandomTime} from '../Dummy Data/DummyData'
+import {bytesToSize} from '../Dummy Data/DummyData'
 
 class FileRow extends Component {
     render() {
