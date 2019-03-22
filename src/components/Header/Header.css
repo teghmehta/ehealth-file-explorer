@@ -14,6 +14,7 @@ a {
     /*width: 100%;*/
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
     align-items: center;
+    background-color: white;
 }
 
 .title-div {
@@ -22,6 +23,7 @@ a {
 
 h1 {
     font-size: 2.2vw;
+    color: rgb(240, 91, 52);
 }
 
 @media only screen and (max-width: 900px) {

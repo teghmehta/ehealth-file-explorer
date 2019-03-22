@@ -38,7 +38,9 @@ th {
     background-color: #f4f6f7;
 }
 
-a:visited { text-decoration: none; color:blue}
+/*rgb(240, 91, 52)
+*/
+a, a:visited { color:blue}
 
 @media only screen and (max-width: 750px) {
     th, td {
