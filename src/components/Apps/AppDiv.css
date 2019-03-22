@@ -37,6 +37,10 @@
     padding-bottom: 20px;
 }
 
+.quick-links .td-name a {
+    color: black;
+}
+
 a {
     display: flex;
     flex-direction: column;
