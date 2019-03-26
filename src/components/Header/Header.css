@@ -4,7 +4,7 @@
 }
 
 a {
-    flex: 0.8;
+    flex: 1;
 }
 .header {
     padding: 10px;
@@ -18,7 +18,9 @@ a {
 }
 
 .title-div {
-    flex: 1.5;
+    flex: 1;
+    align-self: center;
+    text-align: center;
 }
 
 h1 {

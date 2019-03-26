@@ -44,7 +44,8 @@
 a {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
+
 }
 
 .app-div-container {
@@ -225,33 +226,5 @@ a {
 
     .app-logo-img {
         width: 420px;
-    }
-}
-
-@media only screen and (min-width: 1750px) {
-    .quick-links th, .quick-links td, .os-title {
-        font-size: 1.4em;
-    }
-
-    .see-all-files{
-        font-size: 2em;
-    }
-
-    .app-logo-img {
-        width: 550px;
-    }
-}
-
-@media only screen and (min-width: 2000px) {
-    .quick-links th, .quick-links td, .os-title {
-        font-size: 1.5em;
-    }
-
-    .see-all-files{
-        font-size: 2.2em;
-    }
-
-    .app-logo-img {
-        width: 750px;
     }
 }

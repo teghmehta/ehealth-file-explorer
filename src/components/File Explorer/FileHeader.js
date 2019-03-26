@@ -16,6 +16,7 @@ class FileHeader extends Component {
         //This clears the arrows when you route to a new file path
         this.unlisten = this.props.history.listen((location, action) => {
             this.setState({direction: '', nameArrow: false, modArrow: false, sizeArrow: false, descArrow: false})
+            window.scrollTo(0, 0)
         });
     }
     componentWillUnmount() {
