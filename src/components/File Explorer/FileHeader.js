@@ -51,7 +51,7 @@ class FileHeader extends Component {
     render() {
         return (
             <tr>
-                <td align="left" valign="top"><img src="" alt=""/></td>
+                <td align="left" valign="center"><img src="" alt=""/></td>
                 <th onClick={() => this.checkDirection("name", '', 'nameArrow')} className={"header-title header-name"} align="left">{this.displayText(this.props.name, this.state.nameArrow)}</th>
                 <th onClick={() =>  this.checkDirection('mod', Date, 'modArrow')} className={"header-title header-mod"} align="left">{this.displayText(this.props.mod, this.state.modArrow)}</th>
                 <th onClick={() =>  this.checkDirection('size', 0, 'sizeArrow')} className={"header-title header-size"} align="left">{this.displayText(this.props.size, this.state.sizeArrow)}</th>

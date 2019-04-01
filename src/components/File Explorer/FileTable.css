@@ -2,8 +2,12 @@
     width: 100%;
 }
 
-.header-name, .header-mod {
-    width: 41%;
+.header-name {
+    width: 45%;
+}
+
+.header-mod {
+    width: 37%;
 }
 
 .header-size {

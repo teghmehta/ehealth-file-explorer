@@ -61,7 +61,7 @@ class FileTable extends Component {
                         if (index % 2 === 0) {
                             return <FileRow className="shaded" key={item._id} title={item.title} icon={item.icon} name={item.name} mod={item.mod} size={item.size} desc={item.desc} path={item.path}/>
                         }  else {
-                            return <FileRow shaded={false} key={item._id} title={item.title} icon={item.icon} name={item.name} mod={item.mod} size={item.size} desc={item.desc} path={item.path}/>
+                            return <FileRow key={item._id} title={item.title} icon={item.icon} name={item.name} mod={item.mod} size={item.size} desc={item.desc} path={item.path}/>
                         }
                         }))}
                     </tbody>

@@ -56,7 +56,7 @@ class QuickLinks extends Component {
                         </td>
                     </tr>
                     {this.props.fileData.map((function (item, index) {
-                        return <FileRow shaded={false} key={item._id} title={item.title} icon={item.icon}
+                        return <FileRow key={item._id} title={item.title} icon={item.icon}
                                         name={item.name} mod={item.mod} size={item.size} desc={item.desc}
                                         path={item.path}/>
                     }))}
