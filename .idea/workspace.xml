@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b006d0d6-6c37-4226-ac50-f25c51b9792d" name="Default Changelist" comment="Changed the flex of the a and the spacer element in the header. This way the title has more room to grow. I fixed minor css issues.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="b006d0d6-6c37-4226-ac50-f25c51b9792d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -64,11 +63,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="28" column="59" selection-start-line="28" selection-start-column="59" selection-end-line="28" selection-end-column="59" />
+            <state relative-caret-position="150">
+              <caret line="10" column="4" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -94,11 +93,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="248">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -180,8 +179,8 @@
         <option value="$PROJECT_DIR$/src/components/File Explorer/FileTable.js" />
         <option value="$PROJECT_DIR$/src/App.css" />
         <option value="$PROJECT_DIR$/src/components/Header/Header.css" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/App.js" />
+        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
@@ -240,17 +239,6 @@
               <item name="ehealth-file-explorer" type="b2602c69:ProjectViewProjectNode" />
               <item name="ehealth-file-explorer" type="462c0819:PsiDirectoryNode" />
               <item name="build" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ehealth-file-explorer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ehealth-file-explorer" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ehealth-file-explorer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ehealth-file-explorer" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="eHealth Innovation_files" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ehealth-file-explorer" type="b2602c69:ProjectViewProjectNode" />
@@ -364,7 +352,7 @@
       <workItem from="1554312769517" duration="122000" />
       <workItem from="1554312913165" duration="101000" />
       <workItem from="1554313035539" duration="1778000" />
-      <workItem from="1554317850663" duration="2734000" />
+      <workItem from="1554317850663" duration="3152000" />
     </task>
     <task id="LOCAL-00001" summary="Intital commit">
       <created>1551215664136</created>
@@ -569,11 +557,18 @@
       <option name="project" value="LOCAL" />
       <updated>1554147958481</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="...">
+      <created>1554484129405</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1554484129405</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="113348000" />
+    <option name="totallyTimeSpent" value="113766000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -586,6 +581,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4984326" visible="true" weight="0.21282594" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -657,10 +653,10 @@
     <MESSAGE value="Removed description, changed title, and added Click to see all files" />
     <MESSAGE value="Removed the time from Mod since it would cause sorting problems." />
     <MESSAGE value="msc" />
-    <MESSAGE value="..." />
     <MESSAGE value="Centered the header title and change text color and got rid of font size media queries when width is over 1500px" />
     <MESSAGE value="Changed the flex of the a and the spacer element in the header. This way the title has more room to grow. I fixed minor css issues." />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed the flex of the a and the spacer element in the header. This way the title has more room to grow. I fixed minor css issues." />
+    <MESSAGE value="..." />
+    <option name="LAST_COMMIT_MESSAGE" value="..." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/res/ehealth-logo.png">
@@ -871,13 +867,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="28" column="59" selection-start-line="28" selection-start-column="59" selection-end-line="28" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -904,11 +893,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="248">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="4" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
         </state>
       </provider>
     </entry>
