@@ -4,20 +4,7 @@
     <list default="true" id="b006d0d6-6c37-4226-ac50-f25c51b9792d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/eHealth Innovation.htm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/eHealth Innovation_files/0.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/eHealth Innovation_files/bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/eHealth Innovation_files/file_icon_google_24px.a68bb86b.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/eHealth Innovation_files/main.6c18ecce84c742e6cc34.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/eHealth Innovation_files/main.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/eHealth Innovations.htm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/eHealth Innovations_files/1.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/eHealth Innovations_files/bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/eHealth Innovations_files/folder_icon_google_24px.5a3e9cea.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/eHealth Innovations_files/main.4b3d27f94e57c732f5c5.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/eHealth Innovations_files/main.94bb6f9296184d584e48.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/eHealth Innovations_files/main.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/eHealth Innovations_files/return_icon_24px.3a92fc4c.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -45,8 +32,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+            <state relative-caret-position="90">
+              <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -92,8 +79,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="94">
-              <caret line="20" column="48" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
+            <state relative-caret-position="180">
+              <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -105,7 +92,7 @@
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="390">
-              <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+              <caret line="26" column="44" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -145,12 +132,12 @@
       <find>console.log</find>
       <find>quick-links</find>
       <find>1</find>
-      <find>1</find>
+      <find>localhost</find>
     </findStrings>
     <dirStrings>
-      <dir>$PROJECT_DIR$</dir>
       <dir>$PROJECT_DIR$/src/components</dir>
       <dir>$PROJECT_DIR$/src</dir>
+      <dir>$PROJECT_DIR$</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -243,39 +230,23 @@
             <path>
               <item name="ehealth-file-explorer" type="b2602c69:ProjectViewProjectNode" />
               <item name="ehealth-file-explorer" type="462c0819:PsiDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ehealth-file-explorer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ehealth-file-explorer" type="462c0819:PsiDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ehealth-file-explorer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ehealth-file-explorer" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ehealth-file-explorer" type="b2602c69:ProjectViewProjectNode" />
               <item name="ehealth-file-explorer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ehealth-file-explorer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ehealth-file-explorer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ehealth-file-explorer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ehealth-file-explorer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Apps" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ehealth-file-explorer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ehealth-file-explorer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="File Explorer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ehealth-file-explorer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ehealth-file-explorer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Header" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -389,7 +360,7 @@
       <workItem from="1554489501488" duration="363000" />
       <workItem from="1555001399149" duration="4803000" />
       <workItem from="1556732270732" duration="634000" />
-      <workItem from="1556735157033" duration="1226000" />
+      <workItem from="1556735157033" duration="3520000" />
     </task>
     <task id="LOCAL-00001" summary="Intital commit">
       <created>1551215664136</created>
@@ -615,11 +586,18 @@
       <option name="project" value="LOCAL" />
       <updated>1556732833152</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Added &quot;homepage&quot;: &quot;.&quot;">
+      <created>1556737702503</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1556737702503</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="120899000" />
+    <option name="totallyTimeSpent" value="123193000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -634,7 +612,7 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4984326" visible="true" weight="0.21282594" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4984326" visible="true" weight="0.21282594" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" sideWeight="0.5015674" side_tool="true" weight="0.21282594" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -648,8 +626,8 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32865584" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50119334" side_tool="true" weight="0.41432792" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.21621622" />
-      <window_info anchor="bottom" id="TypeScript" order="11" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.2874693" />
+      <window_info anchor="bottom" id="TypeScript" order="11" weight="0.32923833" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.5802292" />
       <window_info anchor="bottom" id="Inspection Results" order="13" sideWeight="0.4988067" weight="0.41432792" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -682,7 +660,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fixed the icon." />
     <MESSAGE value="Added basic sorting functionality but only 1 way sorting. I can sort Names, Dates, and File Sizes" />
     <MESSAGE value="Got two way sorting. Although when I change routes, the arrow does not go away. I tried maybe using withRoute from React-Router v4 but an invariant error occurs." />
     <MESSAGE value="I just fixed the withRouter (fixed the arrow when routing)." />
@@ -707,7 +684,8 @@
     <MESSAGE value="..." />
     <MESSAGE value="removed express and reactsort from package.json" />
     <MESSAGE value="Release" />
-    <option name="LAST_COMMIT_MESSAGE" value="Release" />
+    <MESSAGE value="Added &quot;homepage&quot;: &quot;.&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added &quot;homepage&quot;: &quot;.&quot;" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/res/ehealth-logo.png">
@@ -799,9 +777,6 @@
           <caret line="54" column="33" selection-start-line="54" selection-start-column="33" selection-end-line="54" selection-end-column="33" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package-lock.json">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/public/eHealth Innovation.htm">
       <provider selected="true" editor-type-id="text-editor" />
@@ -932,23 +907,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="20" column="48" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/eH.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -969,10 +927,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/serviceWorker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1357">
+          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
-          <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+          <caret line="26" column="44" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
         </state>
       </provider>
     </entry>

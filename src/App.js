@@ -10,7 +10,7 @@ class App extends Component {
 
   render() {
     return (
-        <BrowserRouter>
+        <BrowserRouter basename={'/ehealth-file-explorer/build/'}>
           <div>
             <Switch>
               <Route exact path={"/"} component={Parent}/>
