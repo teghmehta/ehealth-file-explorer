@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Parent from "./components/Parent";
+import listReactFiles from 'list-react-files'
 import {Switch} from "react-router";
 import {BrowserRouter, Route} from "react-router-dom";
 import FileExplorer from "./components/File Explorer/FileExplorer";
@@ -9,8 +10,14 @@ import {getDummyData, getOS, getReleaseFolders} from './components/Dummy Data/Du
 class App extends Component {
 
   render() {
+      try {
+          console.log("App.js Try");
+          listReactFiles(process.env.PUBLIC_URL).then(files => console.log(files))
+      } catch (e) {
+
+      }
     return (
-        <BrowserRouter basename={'/ehealth-file-explorer/build/'}>
+        <BrowserRouter>
           <div>
             <Switch>
               <Route exact path={"/"} component={Parent}/>
