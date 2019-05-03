@@ -1,18 +1,34 @@
 import React, { Component } from 'react';
 import './App.css';
 import Parent from "./components/Parent";
-import listReactFiles from 'list-react-files'
+import listReactFiles from "list-react-files"
 import {Switch} from "react-router";
 import {BrowserRouter, Route} from "react-router-dom";
 import FileExplorer from "./components/File Explorer/FileExplorer";
 import {getDummyData, getOS, getReleaseFolders} from './components/Dummy Data/DummyData'
+const fs = require('fs');
 
 class App extends Component {
 
   render() {
       try {
           console.log("App.js Try");
-          listReactFiles(process.env.PUBLIC_URL).then(files => console.log(files))
+
+
+          if (process.argv.length <= 2) {
+              console.log("Usage: " + process.env.PUBLIC_URL + " path/to/directory");
+              process.exit(-1);
+          }
+
+          var path = process.argv[2];
+
+          fs.readdir(process.env.PUBLIC_URL, function(err, items) {
+              console.log(items);
+
+              for (var i=0; i<items.length; i++) {
+                  console.log(items[i]);
+              }
+          });
       } catch (e) {
 
       }
